@@ -1,10 +1,12 @@
 export const theme = {
   colors: {
-    background: "#F8F6F2",
-    primary: "#0F172A",
-    gold: "#D4AF37",
-    green: "#556B2F",
+    primary: "#1E3A8A",      // Azul Rey
+    secondary: "#D4AF37",    // Dorado
+    background: "#F8F6F2",   // Marfil
+    surface: "#FFFFFF",
     text: "#374151",
+    muted: "#6B7280",
+    success: "#16A34A",
     white: "#FFFFFF",
   },
 
@@ -13,8 +15,13 @@ export const theme = {
     body: '"Inter", sans-serif',
   },
 
+  spacing: {
+    section: "120px",
+  },
+
   radius: {
-    lg: "20px",
-    xl: "32px",
+    sm: "12px",
+    md: "20px",
+    lg: "32px",
   },
 };
