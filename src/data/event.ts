@@ -1,15 +1,25 @@
 export const event = {
-  city: "Bogotá D.C.",
+  couple: {
+    groom: "Jose Miguel",
+    bride: "Valerin",
+  },
 
+  date: {
+    day: "19",
+    month: "Diciembre",
+    year: "2026",
+    time: "4:00 PM",
+  },
+
+  city: "Bogotá",
   venue: "Vía Cota - Chía",
 
-  date: "19 de diciembre de 2025",
+  maps: {
+    google: "",
+    waze: "",
+  },
 
-  time: "4:00 PM",
-
-  googleMaps:
-    "",
-
-  waze:
-    "",
+  rsvp: {
+    phone: "3213769387",
+  },
 };

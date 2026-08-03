@@ -7,7 +7,7 @@ interface Countdown {
   seconds: number;
 }
 
-const weddingDate = new Date("2025-12-19T16:00:00");
+const weddingDate = new Date("2026-12-19T16:00:00");
 
 export function useCountdown(): Countdown {
   const calculate = (): Countdown => {

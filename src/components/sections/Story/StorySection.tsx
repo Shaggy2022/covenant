@@ -57,6 +57,21 @@ export default function StorySection() {
 
         </div>
 
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="pt-16 text-center"
+        >
+          <p
+            className="mx-auto max-w-3xl text-2xl text-slate-600"
+            style={{ fontFamily: "Cormorant Garamond" }}
+          >
+            Y ahora contamos los días para comenzar el capítulo más
+            importante de nuestra historia.
+          </p>
+        </motion.div>
+
       </div>
     </section>
   );

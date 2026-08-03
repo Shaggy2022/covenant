@@ -1,4 +1,5 @@
 import Container from "../common/Container";
+import { event } from "../../data/event";
 import Section from "../common/Section";
 
 export default function HeroSection() {
@@ -12,7 +13,7 @@ export default function HeroSection() {
           </p>
 
           <h1 className="text-5xl font-light md:text-7xl">
-            Jose
+            {event.couple.groom}
           </h1>
 
           <div className="my-6 text-3xl text-blue-400">
@@ -20,11 +21,11 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-5xl font-light md:text-7xl">
-            Valerin
+            {event.couple.bride}
           </h1>
 
           <p className="mt-10 text-lg tracking-[0.25em] text-slate-300">
-            19 · Diciembre · 2026
+            {event.date.day} · {event.date.month} · {event.date.year}
           </p>
 
           <button

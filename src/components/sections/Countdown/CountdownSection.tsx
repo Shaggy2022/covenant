@@ -25,7 +25,7 @@ export default function CountdownSection() {
         </motion.h2>
 
         <p className="mb-20 tracking-[0.35em] uppercase text-gray-400">
-          19 de diciembre de 2025 · 4:00 PM
+          19 de diciembre de 2026 · 4:00 PM
         </p>
 
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
