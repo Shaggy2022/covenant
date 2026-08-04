@@ -20,6 +20,6 @@ export const event = {
   },
 
   rsvp: {
-    phone: "3213769387",
+    phone: "573213769387",
   },
 };
