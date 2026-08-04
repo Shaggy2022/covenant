@@ -11,6 +11,8 @@ import DressCodeSection from "../components/sections/DressCode/DressCodeSection"
 import RSVPSection from "../components/sections/RSVP/RSVPSection";
 import FooterSection from "../components/sections/Footer/FooterSection";
 import GallerySection from "../components/sections/Gallery/GallerySection";
+import EventDetailsSection from "../components/sections/EventDetails/EventDetailsSection";
+import GiftSection from "../components/sections/Gifts/GiftSection";
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -32,9 +34,11 @@ export default function Home() {
             <HeroSection />
             <StorySection />
             <CountdownSection />
+            <EventDetailsSection />
             <LocationSection />
             <GallerySection />
             <DressCodeSection />
+            <GiftSection />
             <RSVPSection />
             <FooterSection />
           </>

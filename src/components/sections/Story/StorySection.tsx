@@ -3,7 +3,7 @@ import { story } from "../../../data/story";
 
 export default function StorySection() {
   return (
-    <section className="bg-white py-28">
+    <section id="story" className="bg-[#FFCCFF] py-28">
       <div className="mx-auto max-w-5xl px-6">
 
         <motion.h2
@@ -32,7 +32,7 @@ export default function StorySection() {
 
               transition={{ duration: .7 }}
 
-              className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm"
+              className="rounded-3xl border border-gray-200 bg-[#FF99FF] p-8 shadow-sm"
 
             >
 

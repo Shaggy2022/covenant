@@ -2,7 +2,7 @@ import { Shirt, Sparkles } from "lucide-react";
 
 export default function DressCodeSection() {
   return (
-    <section className="bg-white py-32">
+    <section className="py-32 bg-slate-950 text-white">
       <div className="mx-auto max-w-5xl px-6">
 
         <h2
@@ -16,7 +16,7 @@ export default function DressCodeSection() {
 
           <div className="rounded-3xl border p-10 text-center">
             <Shirt
-              className="mx-auto mb-6 text-slate-700"
+              className="mx-auto mb-6 text-amber-500"
               size={50}
             />
 
@@ -24,7 +24,7 @@ export default function DressCodeSection() {
               Caballeros
             </h3>
 
-            <p className="text-slate-600">
+            <p className="text-slate-600 text-white">
               Traje formal o semi formal.
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function DressCodeSection() {
               Damas
             </h3>
 
-            <p className="text-slate-600">
+            <p className="text-slate-600 text-white">
               Vestido formal o elegante.
             </p>
           </div>

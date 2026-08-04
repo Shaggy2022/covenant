@@ -6,7 +6,7 @@ export default function LocationSection() {
 
   return (
 
-    <section className="py-32 bg-[#F8F6F2]">
+    <section className="py-32 bg-slate-950 text-white">
 
       <div className="mx-auto max-w-5xl px-6 text-center">
 
@@ -36,13 +36,13 @@ export default function LocationSection() {
 
         <div className="flex justify-center gap-4">
 
-          <button className="rounded-full bg-slate-900 px-8 py-4 text-white">
+          <button className="rounded-full bg-slate-700 px-8 py-4 text-white">
 
             Google Maps
 
           </button>
 
-          <button className="rounded-full border border-slate-900 px-8 py-4">
+          <button className="rounded-full bg-slate-700 px-8 py-4 text-white">
 
             Waze
 

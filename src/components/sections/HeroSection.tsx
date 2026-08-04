@@ -4,7 +4,7 @@ import Section from "../common/Section";
 
 export default function HeroSection() {
   return (
-    <Section className="min-h-screen flex items-center bg-slate-950">
+    <Section id="hero" className="min-h-screen flex items-center bg-slate-950">
       <Container>
         <div className="flex flex-col items-center text-center text-white">
 
@@ -29,17 +29,12 @@ export default function HeroSection() {
           </p>
 
           <button
-            className="
-              mt-14
-              rounded-full
-              border
-              border-blue-500
-              px-8
-              py-4
-              transition
-              duration-300
-              hover:bg-blue-600
-            "
+            onClick={() =>
+              document
+                .getElementById("story")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="mt-14 rounded-full border border-blue-500 px-8 py-4 transition duration-300 hover:bg-blue-600"
           >
             Comenzar nuestra historia
           </button>
