@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 
 export default function IntroSection() {
-  const handleStart = () => {
-    // Iniciar música
-    window.dispatchEvent(new Event("startMusic"));
-
-    // Ir al Hero
-    document
-      .getElementById("hero")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section className="flex min-h-screen items-center justify-center bg-slate-950 px-6 text-white">
