@@ -1,4 +1,4 @@
-import { Guest } from "../types/guest";
+import type { Guest } from "../types/guest";
 
 export const guests: Guest[] = [
   {

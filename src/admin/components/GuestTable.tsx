@@ -1,4 +1,4 @@
-import { Guest } from "../../types/guest";
+import type { Guest } from "../../types/guest";
 
 interface Props {
   guests: Guest[];
