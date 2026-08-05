@@ -11,7 +11,7 @@ export const story: StoryEvent[] = [
     year: "Desde pequeños",
     title: "Nuestros caminos se cruzaron",
     description:
-      "Nos conocimos desde niños gracias a que estudié con el hermano de Valerin. Sin saberlo, Dios ya estaba escribiendo nuestra historia.",
+      "Nos conocimos desde niños gracias a que estudié con mi cuñado Jesus el hermano de mi esposa. Sin saberlo, Dios ya estaba escribiendo nuestra historia.",
   },
 
   {
@@ -19,7 +19,7 @@ export const story: StoryEvent[] = [
     year: "15 años",
     title: "Todo comenzó a cambiar",
     description:
-      "En la celebración de sus quince años empecé a verla con otros ojos. Fue el momento en que nació una admiración muy especial por ella.",
+      "En la celebración de los quince años de mi esposa, empecé a verla con otros ojos. Fue el momento en que nació una admiración muy especial por ella.",
   },
 
   {
@@ -27,7 +27,7 @@ export const story: StoryEvent[] = [
     year: "Nuestro primer beso",
     title: "Calisa",
     description:
-      "Cuando Valerin cumplió 18 años vivimos uno de los momentos más importantes de nuestra historia: nuestro primer beso en la discoteca Calisa.",
+      "Cuando mi esposa cumplió 18 años vivimos uno de los momentos más importantes de nuestra historia: nuestro primer beso en la discoteca Calisa.",
   },
 
   {
@@ -48,9 +48,25 @@ export const story: StoryEvent[] = [
 
   {
     id: 6,
-    year: "Octubre",
+    year: "Octubre 2024",
     title: "La propuesta",
     description:
-      "Entre risas, emociones y algunos sustos en el Festival del Terror de Salitre Mágico llegó la pregunta más importante de nuestras vidas.",
+      "Entre risas, emociones y algunos sustos en el Festival del Terror de Salitre Mágico llegó la pregunta más importante de nuestras vidas: ¿Quieres casarte conmigo?",
+  },
+
+  {
+    id: 7,
+    year: "09 Enero 2026",
+    title: "Matrimonio Civil",
+    description:
+      "El día más esperado llegó, y con él, la emoción de unir nuestras vidas oficialmente ante la ley y comenzar nuestra aventura como esposos.",
+  },
+
+  {
+    id: 8,
+    year: "19 Diciembre 2026",
+    title: "Matrimonio por la Iglesia",
+    description:
+      "Finalmente, después de meses de preparación y emoción, celebraremos nuestro amor ante Dios y nuestros seres queridos en una ceremonia llena de alegría y bendiciones.",
   },
 ];

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import MainLayout from "../layouts/MainLayout";
 
@@ -17,18 +17,10 @@ import GiftSection from "../components/sections/Gifts/GiftSection";
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 4500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <MainLayout>
       {showIntro ? (
-        <IntroSection />
+        <IntroSection onEnter={() => setShowIntro(false)}/>
       ) : (
           <>
             <HeroSection />

@@ -5,58 +5,44 @@ export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
 
-  // Control Play / Pause
   useEffect(() => {
-    if (!audioRef.current) return;
+    const audio = audioRef.current;
+
+    if (!audio) return;
 
     if (playing) {
-      audioRef.current.play().catch(() => {});
+      audio.play().catch(() => {});
     } else {
-      audioRef.current.pause();
+      audio.pause();
     }
   }, [playing]);
 
-  // Iniciar música desde cualquier parte de la app
   useEffect(() => {
-    const startMusic = () => {
-      if (!audioRef.current) return;
+    const startMusic = async () => {
+      const audio = audioRef.current;
 
-      audioRef.current
-        .play()
-        .then(() => setPlaying(true))
-        .catch(() => {});
+      if (!audio) return;
+
+      try {
+        await audio.play();
+        setPlaying(true);
+      } catch (error) {
+        console.error("No fue posible reproducir la música:", error);
+      }
     };
 
-    window.addEventListener("startMusic", startMusic);
+    window.addEventListener(
+      "startMusic",
+      startMusic as EventListener
+    );
 
     return () => {
-      window.removeEventListener("startMusic", startMusic);
+      window.removeEventListener(
+        "startMusic",
+        startMusic as EventListener
+      );
     };
   }, []);
-
-  // Iniciar música con el primer scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (playing) return;
-
-      if (!audioRef.current) return;
-
-      audioRef.current
-        .play()
-        .then(() => setPlaying(true))
-        .catch(() => {});
-
-      window.removeEventListener("scroll", handleScroll);
-    };
-
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [playing]);
 
   return (
     <>
@@ -67,19 +53,20 @@ export default function MusicPlayer() {
       />
 
       <button
-        onClick={() => setPlaying(!playing)}
+        onClick={() => setPlaying((prev) => !prev)}
         className="
           fixed
           bottom-6
           right-6
           z-50
           rounded-full
-          bg-slate-900
+          bg-[#1A1310]
           p-4
           text-white
           shadow-xl
-          transition
-          hover:scale-105
+          transition-all
+          duration-300
+          hover:scale-110
         "
       >
         {playing ? <Pause size={22} /> : <Play size={22} />}

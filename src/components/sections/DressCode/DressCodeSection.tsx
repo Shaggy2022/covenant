@@ -25,7 +25,7 @@ export default function DressCodeSection() {
             </h3>
 
             <p className="text-slate-600 text-white">
-              Traje formal o semi formal.
+              Traje formal o elegante.
             </p>
           </div>
 
