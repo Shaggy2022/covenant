@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { useGuest } from "../../hooks/useGuest";
+
+const guest = useGuest();
 
 interface IntroSectionProps {
   onEnter: () => void;
@@ -21,6 +24,21 @@ export default function IntroSection({
         transition={{ duration: 1.5 }}
         className="max-w-3xl text-center"
       >
+        {guest && (
+          <div className="mb-10">
+            <p
+              className="text-3xl md:text-4xl text-amber-300"
+              style={{ fontFamily: "Cormorant Garamond" }}
+            >
+              Hola {guest} 👋
+            </p>
+
+            <p className="mt-4 text-white/80 max-w-xl mx-auto leading-7">
+              Con mucha alegría queremos compartir contigo uno de los días
+              más importantes de nuestras vidas. Continua adelante con nuestra cordial invitación.
+            </p>
+          </div>
+        )}
         <p
           className="mb-8 text-2xl leading-relaxed md:text-4xl"
           style={{ fontFamily: "Cormorant Garamond" }}
