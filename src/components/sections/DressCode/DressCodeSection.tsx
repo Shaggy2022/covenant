@@ -46,6 +46,13 @@ export default function DressCodeSection() {
 
         </div>
 
+        <h2
+          className="mb-5 text-center p-10 text-2xl"
+          style={{ fontFamily: "Cormorant Garamond" }}
+        >
+          Los colores Azules y Blancos en todas sus tonalidades se reservan exclusivamente para los esposos, esperamos que comprendan muchas gracias.
+        </h2>
+
       </div>
     </section>
   );

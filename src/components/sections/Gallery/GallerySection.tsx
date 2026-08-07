@@ -84,6 +84,18 @@ const galleryItems = [
     src: "/images/gallery/photo20.jpg",
   },
   {
+    type: "image",
+    src: "/images/gallery/photo21.jpg",
+  },
+  {
+    type: "image",
+    src: "/images/gallery/photo22.jpg",
+  },
+  {
+    type: "image",
+    src: "/images/gallery/photo23.jpg",
+  },
+  {
     type: "video",
     src: "/video/video1.mp4",
   },
@@ -145,7 +157,7 @@ export default function GallerySection() {
           className="mb-10 text-center text-3xl"
           style={{ fontFamily: "Cormorant Garamond" }}
         >
-          Abre cada imagen y revive cada momento, al final hay unos videos que si pulsas sobre
+          Abre cada imagen y revive unos momentos únicos e inolvidables, al final hay unos videos que si pulsas sobre
           ellos podrás verlos en pantalla completa y con sonido.
         </h2>
 
